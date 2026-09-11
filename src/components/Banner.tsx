@@ -2,9 +2,9 @@ import BannerImage from "../assets/banner-stack.png";
 
 const Banner = () => {
   return (
-    <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10 py-10">
+    <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10 py-20 md:py-30">
 
-      {/* Banner Content */}
+   
       <div className="flex-1">
 
         <h1 className="text-[#0F172A] font-extrabold text-4xl md:text-5xl leading-tight py-6">
@@ -34,7 +34,7 @@ const Banner = () => {
         </div>
       </div>
 
-      {/* Banner Image */}
+    
       <div className="flex-1 flex justify-center">
         <img
           src={BannerImage}

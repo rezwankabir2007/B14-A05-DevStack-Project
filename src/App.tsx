@@ -3,7 +3,10 @@ import Banner from "./components/Banner";
 import Navber from "./components/Navber";
 import Technologys from "./technology/technologys";
 import type { Itechnologys } from "./type/technologys";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";  
+import Footer from './components/Footer/Footer'
+
+
 
 const technologysFetch = async (): Promise<Itechnologys[]> => {
   const res = await fetch("/data.json");
@@ -11,22 +14,29 @@ const technologysFetch = async (): Promise<Itechnologys[]> => {
   return data;
 };
 
+ const technologysPromise = technologysFetch();
+
 function App() {
  
-  const technologysPromise = technologysFetch();
-
+ 
   return (
-    <>
+    <> 
       <Navber />
       <Banner />
 
-      <Suspense fallback={<h2>Loading...</h2>}>
+      <Suspense fallback={<div className="text-center font-bold text-4xl pb-14 ">Loading...</div>}>
+        
         <Technologys technologysPromise={technologysPromise} />
+
       </Suspense>
+    
+     
 
-
+     
     <ToastContainer />
 
+   <Footer />
+   
     </>
   );
 }

@@ -1,30 +1,61 @@
-import { useState } from "react";
+import { type Dispatch, type SetStateAction } from "react";
 import type { Itechnologys } from "../type/technologys";
 import { Bounce, toast } from "react-toastify";
 
-interface ExploreTechnologysProps {
+interface TechnologyCardProps {
   technologys: Itechnologys[];
+  selectedTechnologies: Itechnologys[];
+  setSelectedTechnologies: Dispatch<SetStateAction<Itechnologys[]>>; 
 }
 
-const TechnologyCard = ({ technologys }: ExploreTechnologysProps) => {
+
+
+const TechnologyCard = ({
+  technologys,
+  selectedTechnologies,
+  setSelectedTechnologies,
+}: TechnologyCardProps) => {
   return (
     <div className="grid md:grid-cols-3 gap-8">
       {technologys.map((technology: Itechnologys) => (
-        <SingleCard key={technology.id} technology={technology} />
+        <SingleCard
+          key={technology.id}
+          technology={technology}
+          selectedTechnologies={selectedTechnologies}
+          setSelectedTechnologies={setSelectedTechnologies}
+        />
       ))}
     </div>
   );
 };
 
-const SingleCard = ({ technology }: { technology: Itechnologys }) => {
-  const [buttonIsSelected, setButtonIsSelected] = useState(false);
+interface SingleCardProps {
+  technology: Itechnologys;
+  selectedTechnologies: Itechnologys[];
+  setSelectedTechnologies: Dispatch<SetStateAction<Itechnologys[]>>;
+}
 
-  // বাটন ক্লিক হ্যান্ডলার
+const SingleCard = ({
+  technology,
+  selectedTechnologies,
+  setSelectedTechnologies,
+}: SingleCardProps) => {
+
+
+
+  const buttonIsSelected = selectedTechnologies.some(
+    (selectedTechnology) => selectedTechnology.id === technology.id
+  );
+
   const handleAddToStack = () => {
-    setButtonIsSelected(true);
+    if (buttonIsSelected) return;
 
-    // ক্লিক করার সাথে সাথে একবারই টোস্ট শো করবে
-    toast.success(`${technology.name} Added successfully`, {
+    setSelectedTechnologies((currentTechnologies) => [
+      ...currentTechnologies,
+      technology,
+    ]);
+
+    toast.success(`${technology.name} added successfully`, {
       position: "bottom-right",
       autoClose: 3000,
       hideProgressBar: false,
@@ -39,9 +70,7 @@ const SingleCard = ({ technology }: { technology: Itechnologys }) => {
 
   return (
     <div className="card bg-base-100 shadow-sm rounded-2xl">
-      <div className="card-body gap-3">
-
-        {/* Top row */}
+      <div className="card-body gap-5">
         <div className="flex justify-between items-start">
           <img src={technology.icon} alt={technology.name} className="size-10" />
           {technology.badge && (
@@ -51,19 +80,15 @@ const SingleCard = ({ technology }: { technology: Itechnologys }) => {
           )}
         </div>
 
-        {/* Title */}
         <h2 className="text-2xl font-bold">{technology.name}</h2>
 
-        {/* Description */}
-        <p className="text-sm text-base-content/60 border border-dashed border-info/40 rounded-lg p-3">
+        <p className="text-sm text-base-content/50 border border-dashed border-info/40 rounded-lg p-3">
           {technology.description}
         </p>
 
-        {/* Divider */}
         <div className="border-t border-base-200 mt-1" />
 
-        {/* Tags + rating */}
-        <div className="flex items-center justify-between text-sm pt-1">
+        <div className="flex items-center justify-between text-sm pt-3 ">
           <span className="badge badge-ghost">{technology.category}</span>
           <span className="text-base-content/50">{technology.difficulty}</span>
           <span className="flex items-center gap-1 font-medium">
@@ -79,19 +104,15 @@ const SingleCard = ({ technology }: { technology: Itechnologys }) => {
           </span>
         </div>
 
-        {/* CTA Button */}
-
-
         <div className="card-actions mt-3">
-          <button 
-            onClick={handleAddToStack} 
-            disabled={buttonIsSelected===true ? true : false }
+          <button
+            onClick={handleAddToStack}
+            disabled={buttonIsSelected}
             className="btn btn-neutral btn-block rounded-xl"
           >
             {buttonIsSelected ? "Added to Stack" : "Add to Stack"}
           </button>
         </div>
-
       </div>
     </div>
   );
