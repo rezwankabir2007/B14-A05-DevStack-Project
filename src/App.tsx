@@ -22,17 +22,15 @@ function App() {
   return (
     <> 
       <Navber />
+      
       <Banner />
 
-      <Suspense fallback={<div className="text-center font-bold text-4xl pb-14 ">Loading...</div>}>
+      <Suspense fallback={<div className="text-center font-bold text-2xl">Loading...</div>}>
         
         <Technologys technologysPromise={technologysPromise} />
 
       </Suspense>
-    
-     
-
-     
+   
     <ToastContainer />
 
    <Footer />

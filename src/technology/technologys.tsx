@@ -11,7 +11,8 @@ const Technologys = ({ technologysPromise }: TechnologysProps) => {
   const [selectedTechnologies, setSelectedTechnologies] = useState<Itechnologys[]>([]);
 
   return (
-    /* pt-24 যোগ করায় নেভবারের নিচে কন্টেন্ট সুন্দরভাবে দেখাবে এবং হেডিং কেটে যাবে না */
+
+    
     <div className="pt-24 pb-12 min-h-screen bg-slate-50">
       <div className="container mx-auto px-4 py-4">
         <h2 className="font-extrabold text-3xl md:text-4xl text-[#0F172A]">

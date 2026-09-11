@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10 py-20 md:py-30">
 
-   
+
       <div className="flex-1">
 
         <h1 className="text-[#0F172A] font-extrabold text-4xl md:text-5xl leading-tight py-6">
@@ -20,7 +20,7 @@ const Banner = () => {
           your next project.
         </p>
 
-        {/* Buttons */}
+
         <div className="flex flex-wrap gap-4">
 
           <button className="text-white bg-gradient-to-r from-[#F97316] to-[#EC4899] px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-all">
@@ -34,7 +34,7 @@ const Banner = () => {
         </div>
       </div>
 
-    
+
       <div className="flex-1 flex justify-center">
         <img
           src={BannerImage}

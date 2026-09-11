@@ -16,7 +16,7 @@ const ExploreTechnologies = ({
 }: ExploreTechnologysProps) => {
   return (
     <div className="container mx-auto mt-6 flex flex-col lg:flex-row gap-8 items-start px-4">
-      
+
 
 
 

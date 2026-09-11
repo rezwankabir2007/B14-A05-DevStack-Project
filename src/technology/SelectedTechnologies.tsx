@@ -1,5 +1,5 @@
 import type { SetStateAction, Dispatch } from "react";
-import type { Itechnologys } from "../type/technologys"; 
+import type { Itechnologys } from "../type/technologys";
 
 
 interface ISelectedTechnologiesProps {
@@ -20,7 +20,7 @@ const SelectedTechnologies = ({
     setSelectedTechnologies((prev) => prev.filter((item) => item.id !== id));
   };
 
- 
+
 
   const handleRemoveAllItems = () => {
     setSelectedTechnologies([]);
@@ -28,8 +28,8 @@ const SelectedTechnologies = ({
 
   return (
     <div className="w-80 bg-white p-5 rounded-2xl border border-gray-100 shadow-sm h-fit sticky top-24">
-      
-      
+
+
 
       <h3 className="text-lg font-bold text-[#0F172A]">Your Stack</h3>
       <p className="text-xs text-[#94A3B8] mb-4">
@@ -66,7 +66,7 @@ const SelectedTechnologies = ({
                 </div>
               </div>
 
-            
+
 
 
               <button
@@ -92,7 +92,7 @@ const SelectedTechnologies = ({
             </div>
           ))}
 
-          
+
 
 
           <button
