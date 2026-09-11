@@ -5,10 +5,10 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="container mx-auto px-4 py-4 relative">
+    <nav className="bg-white fixed top-0 left-1/2 -translate-x-1/2 w-full  shadow-md py-7 z-50">
    
 
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center container mx-auto">
         
       
         <button
@@ -35,11 +35,11 @@ const Navbar = () => {
         
         <div className="order-3 flex items-center gap-3">
     
-          <button className="text-white bg-gradient-to-r from-[#F97316] to-[#EC4899] rounded-full px-4 py-1.5 md:px-6 md:py-2.5 text-sm md:text-base font-medium shadow-sm hover:opacity-90 ">
-            Sing In
+          <button className="text-[#334155]  px-4 py-1.5 md:px-6 md:py-2.5 text-sm md:text-base font-medium hover:opacity-90 ">
+            Sign In
           </button>
           
-          <button className="text-white bg-gradient-to-r from-[#F97316] to-[#EC4899] rounded-full px-4 py-1.5 md:px-6 md:py-2.5 text-sm md:text-base font-medium shadow-sm hover:opacity-90 ">
+          <button className="text-white bg-[#D91B7E] rounded-full px-4 py-1.5 md:px-6 md:py-2.5 text-sm md:text-base font-medium shadow-sm hover:opacity-90 ">
             Sign Up
           </button>
           

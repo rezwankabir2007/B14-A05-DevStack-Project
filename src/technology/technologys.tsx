@@ -9,6 +9,7 @@ interface TechnologysProps {
   technologysPromise: Promise<Itechnologys[]>;
 }
 
+
 const Technologys = ({ technologysPromise }: TechnologysProps) => {
   console.log(technologysPromise);
 

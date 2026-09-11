@@ -148,15 +148,5 @@
     "rating": 4.7,
     "difficulty": "Advanced",
     "badge": "DevOps"
-  },
-  {
-    "id": "postman",
-    "name": "Postman",
-    "category": "Tools",
-    "description": "A platform for designing, testing, documenting, and working with APIs efficiently.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Postman.svg",
-    "rating": 4.7,
-    "difficulty": "Beginner-Friendly",
-    "badge": "API Tool"
   }
 ]
