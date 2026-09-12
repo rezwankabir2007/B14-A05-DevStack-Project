@@ -23,11 +23,11 @@ const Banner = () => {
 
         <div className="flex flex-wrap gap-4">
 
-          <button className="text-white bg-gradient-to-r from-[#F97316] to-[#EC4899] px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-all">
+          <button className="text-[#FFFFFF] bg-gradient-to-r from-[#F97316] to-[#EC4899] px-6 py-2.5 rounded-lg font-semibold hover:opacity-90 transition-all">
             Explore Technologies
           </button>
 
-          <button className="text-[#374151] font-medium px-4 py-2 hover:text-[#D81B7E] transition">
+          <button className=" shadow-md text-[#374151] font-semibold px-5 py-1 rounded-xl hover:text-[#374151] transition">
             Learn More
           </button>
 

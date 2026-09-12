@@ -103,11 +103,11 @@ const SingleCard = ({
           </span>
         </div>
 
-        <div className="card-actions mt-3">
+        <div className="card-actions mt-3 ">
           <button
             onClick={handleAddToStack}
             disabled={buttonIsSelected}
-            className="btn btn-neutral btn-block rounded-xl"
+            className="btn btn-neutral btn-block rounded-xl "
           >
             {buttonIsSelected ? "Added to Stack" : "Add to Stack"}
           </button>
