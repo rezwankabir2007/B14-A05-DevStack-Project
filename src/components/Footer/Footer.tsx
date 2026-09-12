@@ -66,7 +66,7 @@ const Footer = () => {
 
 
 
-            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-3 border-t border-[#E2E8F0] py-5 px-5 md:px-0">
+            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-3 border-t border-[#e2e8f0] p-5 md:px-0">
 
                 <h2 className="text-[#64748B] text-center">
                     © 2026 Dev Stack. All rights reserved.
