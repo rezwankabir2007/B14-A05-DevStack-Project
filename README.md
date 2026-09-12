@@ -1,75 +1,77 @@
-# React + TypeScript + Vite
+<!-- Now I am creite a GitHub Readme with the following description -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ 
 
-Currently, two official plugins are available:
+<!-- Name of my Projec -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Name of my Project: B14-A05-DevStack-Project
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<!-- Project Description -->
 
-## Expanding the ESLint configuration
+Project Description: Dev stack make us a mordern web devloper, and help us to inprove our skills.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<!-- Technology that you use -->
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Technology that you use: 1.React.js
+2.Vite
+3.Tailwind CSS
+4.TypeScript & JavaScript (ES6)
+5.React-Toastify
+6.DaisyUI
+7.JSON
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 
-```
+<!--3 features about your project -->
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Key features about the projects:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Explore Technologies:
+We can see different technologies and their details.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2.Responsive Design:
+The website works good  on  mobile and desktop..
 
-```
+3. Build Stack:
+We are using our favorite technologies .
+
+
+
+<!-- Answer the question -->
+
+1. What is JSX, and why is it used in React?
+
+Answer:JSX is a syntax used in React. And It lets us write HTML-like code inside JavaScript.
+
+
+2. What is the difference between props and state?
+
+Answer:Props are userd in pass data from a parent to a child component.
+And State stores data into a component.
+
+
+3. What does the useState hook do, and where did you use it in this project?
+
+Answer:useState is used to create and update state in React. And I userd it store the selected technologes in my website.
+
+
+4. What does the useEffect hook do, and why did you need it to load the JSON data?
+
+Answer: useEffect runs code after the component renders.
+I used it to fetch the technology data from the JSON file.
+
+
+5.Why does every item in a .map() list need a unique key prop?
+
+Answer: Key helps us  identufy each item in a list in react.
+
+6. What is conditional rendering? Show one place you used it.
+
+Answer:Conditional rendering means showing different content based on a condition.
+
+
+7.how do you pass data from a parent component to a child component, and how does a child send some thing back to the parents?
+
+Answer: A parent sends data to a child using props.
+A child can send data back by calling a function received through props.

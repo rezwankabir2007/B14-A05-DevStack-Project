@@ -31,7 +31,7 @@ const Footer = () => {
 
 
                 <div className="hidden md:block">
-                    <h2 className="text-[#0F172A]">PRODUCT</h2>
+                    <h2 className="text-[#0F172A ] font-bold">PRODUCT</h2>
 
                     <ul className="text-[#64748B] font-semibold py-5 space-y-2">
                         <li>Home</li>
@@ -43,7 +43,7 @@ const Footer = () => {
 
 
                 <div className="hidden md:block">
-                    <h2 className="text-[#0F172A]">COMPANY</h2>
+                    <h2 className="text-[#0F172A] font-bold">COMPANY</h2>
 
                     <ul className="text-[#64748B] font-semibold py-5 space-y-2">
                         <li>About</li>
@@ -54,9 +54,9 @@ const Footer = () => {
 
 
                 <div className="hidden md:block">
-                    <h2 className="text-[#0F172A]">LEGAL</h2>
+                    <h2 className="text-[#0F172A] font-bold">LEGAL</h2>
 
-                    <ul className="text-[#64748B] font-semibold py-5 space-y-2">
+                    <ul className="text-[#64748B] py-5 space-y-2">
                         <li>Privacy Policy</li>
                         <li>Terms of Service</li>
                     </ul>
