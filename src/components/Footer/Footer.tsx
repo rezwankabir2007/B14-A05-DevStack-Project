@@ -13,7 +13,7 @@ const Footer = () => {
                     <img
                         src={FooterImg}
                         className="h-[50px]"
-                        alt="Dev Stack"
+                        alt=""
                     />
 
                     <p className="text-[#64748B] mt-3">
@@ -21,7 +21,7 @@ const Footer = () => {
                         building modern software.
                     </p>
 
-                    <ul className="flex gap-6 font-semibold text-[#475569] py-8">
+                    <ul className="flex gap-5 font-semibold text-[#475569] py-8">
                         <li>GitHub</li>
                         <li>Twitter</li>
                         <li>Linkedin</li>

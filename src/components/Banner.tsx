@@ -7,7 +7,7 @@ const Banner = () => {
 
       <div className="flex-1">
 
-        <h1 className="text-[#0F172A] font-extrabold text-4xl md:text-5xl leading-tight py-6">
+        <h1 className="text-[#0F172A] font-extrabold text-4xlxl md:text-6xl leading-tight py-6">
           Build Your Ideal{" "}
           <span className="bg-gradient-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
             Development Stack

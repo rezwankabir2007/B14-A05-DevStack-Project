@@ -19,16 +19,7 @@
     "difficulty": "Intermediate",
     "badge": "Trending"
   },
-  {
-    "id": "vue",
-    "name": "Vue.js",
-    "category": "Frontend",
-    "description": "A progressive JavaScript framework for building interactive and responsive user interfaces.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Vue.js.svg",
-    "rating": 4.7,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Popular"
-  },
+  
   {
     "id": "typescript",
     "name": "TypeScript",
@@ -49,16 +40,7 @@
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
   },
-  {
-    "id": "nodejs",
-    "name": "Node.js",
-    "category": "Backend",
-    "description": "A JavaScript runtime that allows developers to build fast and scalable server-side applications.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Node.js.svg",
-    "rating": 4.8,
-    "difficulty": "Intermediate",
-    "badge": "Popular"
-  },
+  
   {
     "id": "express",
     "name": "Express.js",
@@ -79,16 +61,7 @@
     "difficulty": "Advanced",
     "badge": "Scalable"
   },
-  {
-    "id": "mongodb",
-    "name": "MongoDB",
-    "category": "Database",
-    "description": "A flexible NoSQL database designed for modern applications using document-based data storage.",
-    "icon": "https://icon.icepanel.io/Technology/svg/MongoDB.svg",
-    "rating": 4.8,
-    "difficulty": "Beginner-Friendly",
-    "badge": "NoSQL"
-  },
+  
   {
     "id": "postgresql",
     "name": "PostgreSQL",
@@ -109,26 +82,38 @@
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
   },
-  {
-    "id": "firebase",
-    "name": "Firebase",
-    "category": "Database",
-    "description": "A Google platform providing database, authentication, hosting, and backend services for applications.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Firebase.svg",
-    "rating": 4.6,
+   {
+    "id": "javascript",
+    "name": "JavaScript",
+    "category": "Language",
+    "description": "A versatile programming language used to create interactive and dynamic web applications.",
+    "icon": "https://icon.icepanel.io/Technology/svg/JavaScript.svg",
+    "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Easy Setup"
+    "badge": "Web Essential"
   },
   {
-    "id": "git",
-    "name": "Git",
-    "category": "Tools",
-    "description": "A distributed version control system for tracking changes and managing source code efficiently.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Git.svg",
+    "id": "python",
+    "name": "Python",
+    "category": "Language",
+    "description": "A versatile programming language widely used for web development, automation, data science, and AI.",
+    "icon": "https://icon.icepanel.io/Technology/svg/Python.svg",
     "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Versatile"
+  },
+  
+  {
+    "id": "npm",
+    "name": "npm",
+    "category": "Tools",
+    "description": "A package manager for JavaScript that helps developers install, manage, and share reusable packages.",
+    "icon": "https://icon.icepanel.io/Technology/svg/NPM.svg",
+    "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
   },
+ 
   {
     "id": "github",
     "name": "GitHub",
@@ -138,15 +123,5 @@
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
-  },
-  {
-    "id": "docker",
-    "name": "Docker",
-    "category": "Tools",
-    "description": "A platform for developing, packaging, and running applications in lightweight isolated containers.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Docker.svg",
-    "rating": 4.7,
-    "difficulty": "Advanced",
-    "badge": "DevOps"
   }
 ]

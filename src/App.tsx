@@ -33,7 +33,7 @@ function App() {
    
     <ToastContainer />
 
-   <Footer />
+    <Footer />
    
     </>
   );
